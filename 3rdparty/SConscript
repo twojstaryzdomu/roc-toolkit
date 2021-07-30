@@ -1,4 +1,5 @@
 import os.path
+import re
 
 Import('env', 'subenvs', 'meta')
 
@@ -372,7 +373,7 @@ if 'pulseaudio' in download_dependencies:
     subenvs.pulse.ImportThridParty(thirdparty_build_dir, meta.toolchain,
                                thirdparty_versions, 'pulseaudio',
                                libs=[
-                                   'pulsecore-%s' % pa_ver_short,
+                                   'pulseco-%s' % pa_ver_short,
                                    'pulsecommon-%s' % pa_ver_short
                                    ])
 
